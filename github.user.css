@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           github
 @namespace      zperk13
-@version        1.0.2
+@version        1.0.3
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -20,7 +20,7 @@
     @purple_fg: #d3869b;
     @yellow_fg: #fabd2f;
     html, body {
-        height: 100%; /* Normal repository page without a bunch of stuff does not go all the way to the bottom of the viewport, so there was some old background color leaking. This fixes it. */
+        min-height: 100dvh; /* Normal repository page without a bunch of stuff does not go all the way to the bottom of the viewport, so there was some old background color leaking. This fixes it. */
     }
     * {
         --bgColor-default: @bg;
