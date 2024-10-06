@@ -1,0 +1,66 @@
+/* ==UserStyle==
+@name           github
+@namespace      zperk13
+@version        1.0.0
+@author         zperk13
+@homepageURL    https://github.com/zperk13/usercss
+@supportURL     https://github.com/zperk13/usercss/issues
+@preprocessor   less
+==/UserStyle== */
+@-moz-document domain("github.com") {
+    @bg: #282828;
+    @bg1: #3c3836;
+    @bg2: #504945;
+    @bg3: #665c54;
+    @fg: #ebdbb2;
+    @blue_bg: #458588;
+    @blue_fg: #83a598;
+    @green_bg: #98971a;
+    @green_fg: #b8bb26;
+    @purple_fg: #d3869b;
+    @yellow_fg: #fabd2f;
+    * {
+        --bgColor-default: @bg;
+        --bgColor-inset: @bg;
+        --bgColor-muted: @bg1;
+        --bgColor-accent-muted: @bg2;
+        --bgColor-accent-emphasis: @blue_bg;
+        --bgColor-neutral-muted: @bg1;
+        --borderColor-accent-emphasis: @blue_fg;
+        --overlay-bgColor: @bg1;
+
+        --fgColor-default: @fg;
+        --fgColor-accent: @blue_fg;
+        --fgColor-link: @blue_fg;
+        --fgColor-muted: @fg;
+        --fgColor-open: @green_fg;
+        --fgColor-done: @purple_fg;
+
+        --borderColor-default: @bg1;
+        --borderColor-muted: @bg1;
+
+        --button-default-bgColor-rest: @bg1;
+        --button-default-borderColor-rest: @bg2;
+        --button-default-fgColor-rest: @fg;
+
+        --button-default-bgColor-hover: @bg2;
+        --button-default-bgColor-selected: @bg2;
+        --button-default-borderColor-hover: @bg3;
+        --button-default-borderColor-rest: @bg3;
+        /* there isn't a fgColor-hover */
+        
+        --button-primary-bgColor-rest: @green_bg;
+        --button-primary-bgColor-hover: @green_bg;
+        --button-primary-borderColor-rest: @bg2;
+        --button-primary-borderColor-hover: @bg3;
+
+        --buttonCounter-default-bgColor-rest: @bg3;
+
+        --color-notifications-row-read-bg: @bg;
+        --color-notifications-row-bg: @bg1;
+
+        --focus-outlineColor: @blue_fg;
+
+        --button-star-iconColor: @yellow_fg;
+    }
+}
