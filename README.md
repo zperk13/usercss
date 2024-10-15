@@ -4,3 +4,6 @@ User css style overrides I made. Applied with [Stylus](https://addons.mozilla.or
 - GitHub
     - Gruvbox
     - html and body set to have min-height of 100dvh
+- YouTube
+    - Gruvbox
+    - Removes curved corners on videos
