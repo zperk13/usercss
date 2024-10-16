@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.0.0
+@version        1.1.0
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -41,6 +41,7 @@
         --yt-spec-raised-background: @bg;
         --yt-spec-base-background: @bg;
         --yt-spec-menu-background: @bg1;
+        --yt-spec-additive-background: @bg1;
         --yt-spec-text-primary: @fg;
         --yt-spec-text-secondary: @fg2;
         --yt-spec-badge-chip-background: @bg1;
@@ -49,29 +50,61 @@
         --ytd-searchbox-background: @bg1;
         --ytd-searchbox-text-color: @fg;
         --ytd-searchbox-legacy-button-color: @bg2;
+        --yt-live-chat-header-background-color: @bg2;
+        --yt-live-chat-background-color: @bg2;
+        --yt-live-chat-action-panel-background-color: @bg2;
+        --yt-live-chat-primary-text-color: @fg1;
+        --yt-live-chat-secondary-text-color: @fg2;
+        --yt-emoji-picker-search-background-color: @bg3;
+        --yt-emoji-picker-category-background-color: @bg2;
+        --yt-emoji-picker-category-color: @fg;
+        --yt-spec-icon-inactive: @fg;
+        --yt-spec-icon-active-other: @fg2;
     }
-    path {
-        fill: @fg;
+    button[aria-label="Create"],
+    button[aria-label="Notifications"],
+    button[aria-label="Search with your voice"],
+    button[aria-label="Guide"],
+    button[aria-label="Next"],
+    .ytp-chrome-bottom,
+    .yt-emoji-picker-category-button-renderer,
+    .navigation-button,
+    .ytd-mini-guide-renderer,
+    .YtdShortsSuggestedActionStaticHostLeadingIcon,
+    #actions,
+    #top-row {
+        path {
+            fill: @fg;
+        }
     }
 
-    yt-icon {
-        g:first-child {
-            path {
-                &:first-child {
-                    fill: @red_bg;
-                }
-                &:last-child {
-                    fill: @fg;
+    a[title="YouTube Home"] {
+        path {
+            fill: @fg;
+        }
+        yt-icon {
+            g:first-child {
+                path {
+                    &:first-child {
+                        fill: @red_bg;
+                    }
+                    &:last-child {
+                        fill: @fg;
+                    }
                 }
             }
         }
     }
 
-    .ytp-svg-fill {
-        fill: @fg;
+    #chat {
+        border: 0px
     }
 
-    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--enable-backdrop-filter-experiment {
+    #chatframe {
+        border-radius: 0px;
+    }
+
+    .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--enable-backdrop-filter-experiment {
         color: @fg;
         background: @bg2;
         &:hover {
@@ -109,18 +142,31 @@
         }
     }
 
-    .yt-core-attributed-string, .yt-spec-button-shape-next__button-text-content {
+    .yt-core-attributed-string,
+    .yt-spec-button-shape-next__button-text-content,
+    .YtCarouselTitleViewModelTitle,
+    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text,
+    .ShortsLockupViewModelHostOutsideMetadataEndpoint {
         color: @fg;
     }
 
     .yt-spec-button-shape-next--enable-backdrop-filter-experiment {
         background: transparent;
     }
-    .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text:hover {
+    .YtVideoMetadataCarouselViewModelHost, .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text:hover {
         background: @bg1;
     }
 
     .ytd-watch-flexy {
         border-radius: 0 !important;
     }
+
+    .ytd-shorts, #masthead, #page-manager {
+        background: @bg;
+    }
+
+    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text:hover {
+        background: @bg1
+    }
+
 }

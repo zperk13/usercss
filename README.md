@@ -7,3 +7,5 @@ User css style overrides I made. Applied with [Stylus](https://addons.mozilla.or
 - YouTube
     - Gruvbox
     - Removes curved corners on videos
+    - Removes curved corners on live chat
+    - Removed tiny border around live chat
