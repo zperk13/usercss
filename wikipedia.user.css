@@ -1,0 +1,163 @@
+/* ==UserStyle==
+@name           wikipedia
+@namespace      zperk13
+@version        1.0.0
+@author         zperk13
+@homepageURL    https://github.com/zperk13/usercss
+@supportURL     https://github.com/zperk13/usercss/issues
+@preprocessor   less
+==/UserStyle== */
+@-moz-document domain("wikipedia.org") {
+    @bg: #282828;
+    @red_bg: #cc241d;
+    @green_bg: #98971a;
+    @yellow_bg: #d79921;
+    @blue_bg: #458588;
+    @purple_bg: #b16286;
+    @aqua_bg: #689d6a;
+    @gray_bg: #a89984;
+    @gray_fg: #928374;
+    @red_fg: #fb4934;
+    @green_fg: #b8bb26;
+    @yellow_fg: #fabd2f;
+    @blue_fg: #83a598;
+    @purple_fg: #d3869b;
+    @aqua_fg: #8ec07c;
+    @fg: #ebdbb2;
+    @bg0: #282828;
+    @bg1: #3c3836;
+    @bg2: #504945;
+    @bg3: #665c54;
+    @bg4: #7c6f64;
+    @gray: #928374;
+    @orange_bg: #d65d0e;
+    @fg4: #a89984;
+    @fg3: #bdae93;
+    @fg2: #d5c4a1;
+    @fg1: #ebdbb2;
+    @fg0: #fbf1c7;
+    @orange_fg: #fe8019;
+    * {
+        --background-color-base: @bg;
+        --background-color-neutral: @bg;
+        --background-color-neutral-subtle: @bg;
+        --background-color-interactive: @bg2;
+        --background-color-interactive-subtle: @bg1;
+        --color-base: @fg;
+        --color-visited: @purple_fg;
+        --color-subtle: @fg2;
+        --color-emphasized: @fg0;
+        --color-progressive: @blue_fg;
+        --color-progressive-hover: @blue_fg;
+        --border-color-base: @bg2;
+        --border-color-interactive: @fg;
+        --border-color-progressive--focus: @blue_fg;
+    }
+
+    #skin-client-prefs-skin-theme {
+        visibility: hidden; /* Hides the color theme selector as it doesn't matter when this file makes everything gruvbox */
+    }
+
+    .mw-logo-container {
+        visibility: hidden;
+        /* The text changes color based on whether it thinks you're in light or dark mode.
+         * It doesn't look great when it thinks you're in light mode,
+         * and the easiest solution to fix that was to just remove it.
+         * The globe logo is still there because it doesn't change color.
+         * If you're on Wikipedia, you know you're on Wikipedia.
+         */
+    }
+
+    #mp-topbanner() {
+        background-color: @bg1;
+        border: 0;
+    }
+
+    .mw-parser-output #mp-topbanner {
+        #mp-topbanner();
+    }
+    html.skin-theme-clientpref-night .mw-parser-output #mp-topbanner {
+        #mp-topbanner();
+    }
+
+    #mp-left-and-right() {
+        background-color: @bg1;
+        border: 0;
+        .mp-h2 {
+            background-color: @bg2;
+            border: 0;
+        }
+    }
+
+    #mp-right() {
+        #mp-left-and-right();
+    }
+
+    html.skin-theme-clientpref-night .mw-parser-output #mp-right {
+        #mp-right();
+    }
+    .mw-parser-output #mp-right {
+        #mp-right();
+    }
+
+    #mp-left() {
+        #mp-left-and-right();
+    }
+
+    html.skin-theme-clientpref-night .mw-parser-output #mp-left {
+        #mp-left();
+    }
+    .mw-parser-output #mp-left {
+        #mp-left();
+    }
+
+    #mp-not-horizontally-stacked() {
+        background-color: @bg1;
+        border: 0;
+        padding: 0;
+        .mp-h2 {
+            background-color: @bg2;
+            border: 0;
+        }
+        div {
+            margin: 0 0.5em 0.5em; /* Same amount as the padding that was removed a few lines above. Just wanted to make the .mp-h2 immune to the padding */
+        }
+    }
+
+    #mp-middle() {
+        #mp-not-horizontally-stacked();
+    }
+
+    html.skin-theme-clientpref-night .mw-parser-output #mp-middle {
+        #mp-middle();
+    }
+    .mw-parser-output #mp-middle {
+        #mp-middle();
+    }
+
+    #mp-lower() {
+        #mp-not-horizontally-stacked();
+    }
+
+    html.skin-theme-clientpref-night .mw-parser-output #mp-lower {
+        #mp-lower();
+    }
+    .mw-parser-output #mp-lower {
+        #mp-lower();
+    }
+
+    #mp-bottom {
+        #mp-not-horizontally-stacked();
+    }
+
+    html.skin-theme-clientpref-night .mw-parser-output #mp-bottom {
+        #mp-bottom();
+    }
+    .mw-parser-output #mp-bottom {
+        #mp-bottom();
+    }
+
+    .vector-page-toolbar-container {
+        box-shadow: none;
+    }
+}
