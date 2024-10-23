@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.2.0
+@version        1.2.1
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -173,7 +173,7 @@
         background: @bg1
     }
 
-    .ytp-cairo-refresh-signature-moments .ytp-play-progress {
+    .ytp-cairo-refresh-signature-moments .ytp-play-progress, ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer {
         background: @red_bg;
     }
 
