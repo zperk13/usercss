@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.1.0
+@version        1.2.0
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -71,20 +71,24 @@
     .navigation-button,
     .ytd-mini-guide-renderer,
     .YtdShortsSuggestedActionStaticHostLeadingIcon,
+    .guide-icon,
     #actions,
     #top-row {
+        span {
+            color: @fg;
+        }
         path {
             fill: @fg;
         }
     }
 
-    a[title="YouTube Home"] {
+    a[title="YouTube Home"], a[title="YouTube Studio"], a[title="YouTube TV"], a[title="YouTube Music"], a[title="YouTube Kids"] {
         path {
             fill: @fg;
         }
         yt-icon {
             g:first-child {
-                path {
+                path, circle {
                     &:first-child {
                         fill: @red_bg;
                     }
@@ -169,4 +173,19 @@
         background: @bg1
     }
 
+    .ytp-cairo-refresh-signature-moments .ytp-play-progress {
+        background: @red_bg;
+    }
+
+    .ytp-volume-slider-handle {
+        background: @fg;
+        &::before {
+            z-index: -1;
+            background: @fg;
+        }
+        &::after {
+            z-index: -1;
+            background: @bg1;
+        }
+    }
 }
