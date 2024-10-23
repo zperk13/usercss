@@ -15,3 +15,4 @@ User css style overrides I made. Applied with [Stylus](https://addons.mozilla.or
     - Removes curved corners on videos
     - Removes curved corners on live chat
     - Removed tiny border around live chat
+    - Removed gradient from video progress bar
