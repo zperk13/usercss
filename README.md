@@ -1,5 +1,5 @@
 # usercss
-User css style overrides I made. Applied with [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/). Styles are mainly to add gruvbox colors, but other tweaks made be made. You're free to use these styles if you want but I can't guarantee that colors will be the only thing I touch.
+User css style overrides I made. Applied with [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/). Styles are mainly to add gruvbox colors, but other tweaks small tweaks are also made. You're free to use these styles if you want but be aware colors aren't the only things I change. Everything that is changed is listed below.
 
 - GitHub
     - Gruvbox
@@ -15,4 +15,4 @@ User css style overrides I made. Applied with [Stylus](https://addons.mozilla.or
     - Removes curved corners on videos
     - Removes curved corners on live chat
     - Removed tiny border around live chat
-    - Removed gradient from video progress bar
+    - Removed gradient from video progress bars
