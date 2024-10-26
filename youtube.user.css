@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.2.2
+@version        1.2.3
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -42,6 +42,7 @@
         --yt-spec-base-background: @bg;
         --yt-spec-menu-background: @bg1;
         --yt-spec-additive-background: @bg1;
+        --yt-spec-static-overlay-background-brand: @red_bg;
         --yt-spec-text-primary: @fg;
         --yt-spec-text-secondary: @fg2;
         --yt-spec-badge-chip-background: @bg1;
@@ -173,7 +174,11 @@
         background: @bg1
     }
 
-.ytp-cairo-refresh-signature-moments .ytp-play-progress, ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer, .YtProgressBarLineProgressBarPlayedRefresh {
+    .ytp-cairo-refresh-signature-moments .ytp-play-progress,
+    .ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer,
+    .YtProgressBarLineProgressBarPlayedRefresh,
+    .yt-spec-avatar-shape--cairo-refresh .yt-spec-avatar-shape__live-badge,
+    .yt-spec-avatar-shape--cairo-refresh.yt-spec-avatar-shape--live-ring::after {
         background: @red_bg;
     }
 
