@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.2.3
+@version        1.2.4
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -175,7 +175,7 @@
     }
 
     .ytp-cairo-refresh-signature-moments .ytp-play-progress,
-    .ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer,
+    ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer,
     .YtProgressBarLineProgressBarPlayedRefresh,
     .yt-spec-avatar-shape--cairo-refresh .yt-spec-avatar-shape__live-badge,
     .yt-spec-avatar-shape--cairo-refresh.yt-spec-avatar-shape--live-ring::after {
