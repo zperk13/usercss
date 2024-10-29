@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.2.4
+@version        1.2.5
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -151,7 +151,8 @@
     .yt-spec-button-shape-next__button-text-content,
     .YtCarouselTitleViewModelTitle,
     .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text,
-    .ShortsLockupViewModelHostOutsideMetadataEndpoint {
+    .ShortsLockupViewModelHostOutsideMetadataEndpoint,
+    .sponsorChapterText {
         color: @fg;
     }
 
