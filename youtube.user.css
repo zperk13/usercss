@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.3.0
+@version        1.4.0
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -75,6 +75,46 @@
         --ytcp-overlay-text-primary: @fg;
         --ytcp-themed-green: @green_fg;
     }
+    
+    .yt-core-attributed-string,
+    .yt-spec-button-shape-next__button-text-content,
+    .YtCarouselTitleViewModelTitle,
+    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text,
+    .ShortsLockupViewModelHostOutsideMetadataEndpoint,
+    .sponsorChapterText,
+    .yt-tab-shape-wiz__tab,
+    .ytp-panel-menu,
+    .ytp-tooltip-text,
+    #dialog-title {
+        color: @fg;
+    }
+    
+    .ytp-menu-label-secondary, .ytp-swatch-color-white, .ytp-menuitem-label-count {
+        color: @fg2;
+    }
+    
+    .ytd-shorts,
+    #masthead,
+    #page-manager {
+        background: @bg;
+    }
+    
+    .YtVideoMetadataCarouselViewModelHost,
+    .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text:hover,
+    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text:hover {
+        background: @bg1;
+    }
+    
+    .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text,
+    .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--outline, {
+        color: @blue_fg;
+    }
+    
+    .yt-tab-group-shape-wiz__slider, .ytp-tooltip.ytp-preview:not(.ytp-text-detail) {
+        background: @fg;
+    }
+
+    
     button[aria-label="Create"],
     button[aria-label="Notifications"],
     button[aria-label="Search with your voice"],
@@ -87,7 +127,9 @@
     .YtdShortsSuggestedActionStaticHostLeadingIcon,
     .guide-icon,
     #actions,
-    #top-row {
+    .ytp-menuitem-icon,
+    #top-row,
+    .ytp-tooltip-edu {
         span {
             color: @fg;
         }
@@ -122,7 +164,9 @@
         border-radius: 0px;
     }
 
-    .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--enable-backdrop-filter-experiment {
+    .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled.yt-spec-button-shape-next--filled,
+    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled,
+    .yt-spec-button-shape-next--enable-backdrop-filter-experiment {
         color: @fg;
         background: @bg2;
         &:hover {
@@ -155,9 +199,6 @@
         }
     }
 
-    .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text, .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--outline, {
-        color: @blue_fg;
-    }
 
     .yt-core-attributed-string--link-inherit-color { 
         /* Color is define in HTML style element for some reason so I need to use !important to override it */
@@ -167,34 +208,12 @@
         }
     }
 
-    .yt-core-attributed-string,
-    .yt-spec-button-shape-next__button-text-content,
-    .YtCarouselTitleViewModelTitle,
-    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text,
-    .ShortsLockupViewModelHostOutsideMetadataEndpoint,
-    .sponsorChapterText,
-    .yt-tab-shape-wiz__tab,
-    #dialog-title {
-        color: @fg;
-    }
-
     .yt-spec-button-shape-next--enable-backdrop-filter-experiment {
         background: transparent;
-    }
-    .YtVideoMetadataCarouselViewModelHost, .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text:hover {
-        background: @bg1;
     }
 
     .ytd-watch-flexy {
         border-radius: 0 !important;
-    }
-
-    .ytd-shorts, #masthead, #page-manager {
-        background: @bg;
-    }
-
-    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text:hover {
-        background: @bg1
     }
 
     .ytp-cairo-refresh-signature-moments .ytp-play-progress,
@@ -223,12 +242,27 @@
         }
     }
     
-    .yt-tab-group-shape-wiz__slider {
-        background: @fg;
-    }
-    
     .badge-shape-wiz--thumbnail-default {
         color: @fg;
         background: rgba(@bg, 0.75);
+    }
+    
+    .ytp-progress-list {
+        background: rgba(@fg, .2);
+    }
+    
+    .ytp-load-progress {
+        background: rgba(@fg, 0.4);
+    }
+    
+    .ytp-hover-progress-light {
+        background: rgba(@fg, 0.5);
+    }
+    
+    .html5-video-player a {
+        color: @fg;
+        &:hover {
+            color: @fg0;
+        }
     }
 }
