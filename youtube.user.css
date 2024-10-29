@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.2.5
+@version        1.3.0
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -61,6 +61,19 @@
         --yt-emoji-picker-category-color: @fg;
         --yt-spec-icon-inactive: @fg;
         --yt-spec-icon-active-other: @fg2;
+        --paper-tabs-selection-bar-color: @fg;
+        --ytcp-call-to-action: @fg;
+        --ytcp-text-secondary: @fg4;
+        --ytcp-general-background-a: @bg1;
+        --ytcp-line-divider: @bg4;
+        --ytcp-text-primary: @fg;
+        --icon-color: @fg4;
+        --ytcp-themed-blue: @blue_fg;
+        --ytve-primary-color: @fg;
+        --ytcp-chip-background-active: @bg4;
+        --ytcp-chip-background: @bg2;
+        --ytcp-overlay-text-primary: @fg;
+        --ytcp-themed-green: @green_fg;
     }
     button[aria-label="Create"],
     button[aria-label="Notifications"],
@@ -116,6 +129,13 @@
             background: @bg3;
         }
     }
+    
+    .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled {
+        background: @blue_bg;
+        &:hover {
+            background: @blue_fg;
+        }
+    }
 
     .yt-spec-button-shape-next--icon-button {
         background: transparent;
@@ -152,7 +172,9 @@
     .YtCarouselTitleViewModelTitle,
     .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text,
     .ShortsLockupViewModelHostOutsideMetadataEndpoint,
-    .sponsorChapterText {
+    .sponsorChapterText,
+    .yt-tab-shape-wiz__tab,
+    #dialog-title {
         color: @fg;
     }
 
@@ -193,5 +215,20 @@
             z-index: -1;
             background: @bg1;
         }
+    }
+    
+    svg.yta-line-chart-base {
+        .x, .y2 {
+            fill: @fg;
+        }
+    }
+    
+    .yt-tab-group-shape-wiz__slider {
+        background: @fg;
+    }
+    
+    .badge-shape-wiz--thumbnail-default {
+        color: @fg;
+        background: rgba(@bg, 0.75);
     }
 }
