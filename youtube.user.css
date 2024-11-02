@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.4.0
+@version        1.4.1
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -45,6 +45,8 @@
         --yt-spec-static-overlay-background-brand: @red_bg;
         --yt-spec-text-primary: @fg;
         --yt-spec-text-secondary: @fg2;
+        --yt-lightsource-primary-title-color: @fg;
+        --yt-lightsource-secondary-title-color: @fg;
         --yt-spec-badge-chip-background: @bg1;
         --yt-spec-call-to-action: @blue_fg;
         --yt-spec-static-brand-red: @red_bg;
@@ -74,6 +76,7 @@
         --ytcp-chip-background: @bg2;
         --ytcp-overlay-text-primary: @fg;
         --ytcp-themed-green: @green_fg;
+        --yt-active-playlist-panel-background-color: @bg1;
     }
     
     .yt-core-attributed-string,
