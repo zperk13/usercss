@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.4.1
+@version        1.4.2
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -96,7 +96,6 @@
         color: @fg2;
     }
     
-    .ytd-shorts,
     #masthead,
     #page-manager {
         background: @bg;
