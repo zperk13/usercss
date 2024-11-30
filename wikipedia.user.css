@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           wikipedia
 @namespace      zperk13
-@version        1.0.0
+@version        1.0.1
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -159,5 +159,45 @@
 
     .vector-page-toolbar-container {
         box-shadow: none;
+    }
+    
+    .infobox {
+        background-color: @bg1;
+        color: @fg;
+        border: 0;
+        .infobox-header {
+            background-color: @bg2 !important; // !important because the color was specificed with an inline HTML style for some reason.
+        }
+    }
+    
+    .mw-highlight {
+        .w {
+            color: @fg;
+        }
+        .bp, .k, .kc, .kd, .kn, .kp, .nb {
+            color: @green_fg;
+        }
+        .fm, .nc, .nf, .nn, .nv, .vg{
+            color: @blue_fg;
+        }
+        .c1 {
+            color: @aqua_fg;
+        }
+        .mf, .mi {
+            color: @gray;
+        }
+        .kt, .s, .s1, .s2, .sa, .sd {
+            color: @red_fg;
+        }
+        .cp {
+            color: @orange_fg;
+        }
+        .ow {
+            color: @purple_fg;
+        }
+        background: @bg1;
+    }
+    code {
+        border-color: @fg;
     }
 }
