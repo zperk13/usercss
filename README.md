@@ -1,5 +1,5 @@
 # usercss
-User css style overrides I made. Applied with [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/). Styles are mainly to add gruvbox colors, but other tweaks small tweaks are also made. You're free to use these styles if you want but be aware colors aren't the only things I change. Everything that is changed is listed below.
+User css style overrides I made. Applied with [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/). Styles are mainly to add gruvbox colors, but other small tweaks are also made. You're free to use these styles if you want but be aware colors aren't the only things I change. Everything that is changed is listed below.
 
 - GitHub
     - Gruvbox
