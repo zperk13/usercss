@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           wikipedia
 @namespace      zperk13
-@version        1.0.1
+@version        1.0.2
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -199,5 +199,8 @@
     }
     code {
         border-color: @fg;
+    }
+    img.mwe-math-fallback-image-display, img.mwe-math-fallback-image-inline {
+        filter: invert(0.83);
     }
 }
