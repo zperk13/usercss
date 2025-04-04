@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.5.0
+@version        1.5.1
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -167,8 +167,7 @@
     }
 
     .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled.yt-spec-button-shape-next--filled,
-    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled,
-    .yt-spec-button-shape-next--enable-backdrop-filter-experiment {
+    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
         border: 1px solid @fg;
         color: @fg;
         background: @bg3;
