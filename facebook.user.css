@@ -1,0 +1,57 @@
+/* ==UserStyle==
+@name           Facebook
+@namespace      zperk13
+@version        1.0.0
+@author         zperk13
+@homepageURL    https://github.com/zperk13/usercss
+@supportURL     https://github.com/zperk13/usercss/issues
+@preprocessor   less
+==/UserStyle== */
+@-moz-document domain("facebook.com") {
+    @bg: #282828;
+    @red_bg: #cc241d;
+    @green_bg: #98971a;
+    @yellow_bg: #d79921;
+    @blue_bg: #458588;
+    @purple_bg: #b16286;
+    @aqua_bg: #689d6a;
+    @gray_bg: #a89984;
+    @gray_fg: #928374;
+    @red_fg: #fb4934;
+    @green_fg: #b8bb26;
+    @yellow_fg: #fabd2f;
+    @blue_fg: #83a598;
+    @purple_fg: #d3869b;
+    @aqua_fg: #8ec07c;
+    @fg: #ebdbb2;
+    @bg0: #282828;
+    @bg1: #3c3836;
+    @bg2: #504945;
+    @bg3: #665c54;
+    @bg4: #7c6f64;
+    @gray: #928374;
+    @orange_bg: #d65d0e;
+    @fg4: #a89984;
+    @fg3: #bdae93;
+    @fg2: #d5c4a1;
+    @fg1: #ebdbb2;
+    @fg0: #fbf1c7;
+    @orange_fg: #fe8019;
+    
+    * {
+        --web-wash: @bg;
+        --card-background: @bg1;
+        --primary-text: @fg;
+        --secondary-text: @fg2;
+        --comment-background: @bg2;
+        --surface-background: @bg;
+        --comment-threading-lines: @fg4;
+        --nav-bar-background: @bg;
+        --primary-icon: @fg;
+        --secondary-icon: @fg2;
+        --secondary-button-background: @bg2;
+        
+        // @fg. Generated with https://angel-rs.github.io/css-color-filter-generator/
+        --filter-secondary-icon: brightness(0) saturate(100%) invert(89%) sepia(24%) saturate(336%) hue-rotate(357deg) brightness(97%) contrast(90%);
+    }
+}
