@@ -1,0 +1,93 @@
+/* ==UserStyle==
+@name           messages.google.com
+@namespace      zperk13
+@version        1.0.0
+@author         zperk13
+@homepageURL    https://github.com/zperk13/usercss
+@supportURL     https://github.com/zperk13/usercss/issues
+@preprocessor   less
+==/UserStyle== */
+@-moz-document domain("messages.google.com") {
+    @bg: #282828;
+    @red_bg: #cc241d;
+    @green_bg: #98971a;
+    @yellow_bg: #d79921;
+    @blue_bg: #458588;
+    @purple_bg: #b16286;
+    @aqua_bg: #689d6a;
+    @gray_bg: #a89984;
+    @gray_fg: #928374;
+    @red_fg: #fb4934;
+    @green_fg: #b8bb26;
+    @yellow_fg: #fabd2f;
+    @blue_fg: #83a598;
+    @purple_fg: #d3869b;
+    @aqua_fg: #8ec07c;
+    @fg: #ebdbb2;
+    @bg0: #282828;
+    @bg1: #3c3836;
+    @bg2: #504945;
+    @bg3: #665c54;
+    @bg4: #7c6f64;
+    @gray: #928374;
+    @orange_bg: #d65d0e;
+    @fg4: #a89984;
+    @fg3: #bdae93;
+    @fg2: #d5c4a1;
+    @fg1: #ebdbb2;
+    @fg0: #fbf1c7;
+    @orange_fg: #fe8019;
+    
+    * {
+        --conv-container-host-bg-color: @bg !important;
+        --compose-readonly-bg-color: @bg !important;
+        --input-bg-transparent-fade-color: @bg !important;
+        --input-bg-fade-color: @bg !important;
+        --rcs-incoming-bg-color: @bg1 !important;
+        --incoming-bg-color: @bg1 !important;
+        --xms-outgoing-bg-color: @bg !imporant;
+        --rcs-outgoing-bg-color: @bg1 !important;
+        --input-bg-color: @bg1 !important;
+        --mat-select-panel-background-color: @bg !important;
+        --mat-app-background-color: @bg !important;
+        --header-bg-color: @bg !important;
+        --main-nav-host-bg-color: @bg !important;
+        --list-grey-selected-bg-color: @bg1 !important;
+        --list-grey-hover-bg-color: @bg2 !important;
+        --fab-icon-container-bg-color: @bg1 !important;
+        --mat-menu-container-color: @bg2 !important;
+        --mat-menu-item-hover-state-layer-color: @bg3 !important;
+        --main-nav-host-border-color: @bg3 !important;
+        
+        --input-color: @fg !important;
+        --incoming-color: @fg !important;
+        --rcs-outgoing-color: @fg !important;
+        --header-color: @fg !important;
+        --conv-name-color: @fg !important;
+        --conv-snippet-color: @fg4 !important;
+        --mat-icon-button-icon-color: @fg !important;
+        --logo-text-color: @fg !important;
+        --scroll-bar-bg-color: @fg !important;
+        --icon-button-color: @fg !important;
+        --msg-info-color: @fg3 !important;
+        --picker-button-fill-color: @fg2 !important;
+        --conv-list-item-menu-icon-color: @fg !important;
+        --icon-button-disabled-color: @fg4 !important;
+        --fab-label-color: @fg !important;
+        --mat-menu-item-label-text-color: @fg !important;
+        
+        --contact-cyan-fg-color: @aqua_fg;
+        --contact-green-fg-color: @green_fg;
+        --contact-orange-fg-color: @orange_fg;
+        --contact-pink-fg-color: @purple_fg;
+        --contact-purple-fg-color: @purple_fg;
+        --contact-red-fg-color-v1: @red_fg;
+        --contact-yellow-fg-color: @yellow_fg;
+        
+        box-shadow: none !important;
+    }
+    
+    mws-message-part-content.is-focused {
+        background: @bg2 !important;
+    }
+}
