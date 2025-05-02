@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.5.2
+@version        1.5.3
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -98,7 +98,8 @@
     }
     
     #masthead,
-    #page-manager {
+    #page-manager,
+    #guide {
         background: @bg;
     }
     
