@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.5.1
+@version        1.5.2
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -77,6 +77,7 @@
         --ytcp-overlay-text-primary: @fg;
         --ytcp-themed-green: @green_fg;
         --yt-active-playlist-panel-background-color: @bg1;
+        --yt-frosted-glass-desktop: @bg;
     }
     
     .yt-core-attributed-string,
