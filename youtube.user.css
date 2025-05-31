@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.5.3
+@version        1.6.0
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -270,5 +270,10 @@
         &:hover {
             color: @fg0;
         }
+    }
+    
+    /* Fixes being able to scroll to the right when in fullsrceen even though there's nothing over there */
+    ytd-app {
+        overflow-x: hidden !important;
     }
 }
