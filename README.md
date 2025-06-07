@@ -16,3 +16,4 @@ User css style overrides I made. Applied with [Stylus](https://addons.mozilla.or
     - Removes curved corners on live chat
     - Removed tiny border around live chat
     - Removed gradient from video progress bars
+    - Fixed being able to scroll horizontally in YouTube fullscreen
