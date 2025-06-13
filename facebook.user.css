@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Facebook
 @namespace      zperk13
-@version        1.0.0
+@version        1.0.1
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -49,9 +49,16 @@
         --nav-bar-background: @bg;
         --primary-icon: @fg;
         --secondary-icon: @fg2;
-        --secondary-button-background: @bg2;
+        --secondary-button-background: @bg2
         
         // @fg. Generated with https://angel-rs.github.io/css-color-filter-generator/
         --filter-secondary-icon: brightness(0) saturate(100%) invert(89%) sepia(24%) saturate(336%) hue-rotate(357deg) brightness(97%) contrast(90%);
+    }
+    
+    div[role="tooltip"] {
+        span {
+            color: @fg !important;
+        }
+        background: @bg3 !important;
     }
 }
