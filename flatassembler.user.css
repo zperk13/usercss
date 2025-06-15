@@ -37,16 +37,17 @@
     @fg1: #ebdbb2;
     @fg0: #fbf1c7;
     @orange_fg: #fe8019;
-    body, .container {
+    body {
         background-color: @bg;
         color: @fg;
-        width: 100vw !important;
-        padding: 0;
-        border: 0;
-
     }
     .container {
         background-color: @bg1;
+    }
+    body, .container {
+        width: 100vw !important;
+        padding: 0;
+        border: 0;
     }
     .maintitle, .largetext,  {
         color: @fg;
