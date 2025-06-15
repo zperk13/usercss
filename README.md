@@ -8,6 +8,8 @@ User css style overrides I made. Applied with [Stylus](https://addons.mozilla.or
     - Gruvbox
 - Facebook
     - Gruvbox
+- flat assembler
+    - Gruvbox
 - Wikipedia
     - Gruvbox
     - Removed the text part of the logo in the top left as it was an image and weird to work with in the color scheme
