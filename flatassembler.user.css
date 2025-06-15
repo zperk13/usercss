@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           flatassembler
 @namespace      zperk13
-@version        1.0.0
+@version        1.1.0
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -37,9 +37,13 @@
     @fg1: #ebdbb2;
     @fg0: #fbf1c7;
     @orange_fg: #fe8019;
-    body {
+    body, .container {
         background-color: @bg;
         color: @fg;
+        width: 100vw !important;
+        padding: 0;
+        border: 0;
+
     }
     .container {
         background-color: @bg1;
