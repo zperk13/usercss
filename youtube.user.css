@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.6.0
+@version        1.7.0
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -42,9 +42,11 @@
         --yt-spec-base-background: @bg;
         --yt-spec-menu-background: @bg1;
         --yt-spec-additive-background: @bg1;
+        --yt-spec-inverted-background: @bg2;
         --yt-spec-static-overlay-background-brand: @red_bg;
         --yt-spec-text-primary: @fg;
         --yt-spec-text-secondary: @fg2;
+        --yt-spec-text-primary-inverse: @fg;
         --yt-lightsource-primary-title-color: @fg;
         --yt-lightsource-secondary-title-color: @fg;
         --yt-spec-badge-chip-background: @bg1;
@@ -275,5 +277,10 @@
     /* Fixes being able to scroll to the right when in fullsrceen even though there's nothing over there */
     ytd-app {
         overflow-x: hidden !important;
+    }
+    
+    /* Popup when you add a video to a playlist */
+    .snackbarViewModelHost {
+        background: @bg3;
     }
 }
