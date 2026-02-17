@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           youtube
 @namespace      zperk13
-@version        1.7.0
+@version        1.7.1
 @author         zperk13
 @homepageURL    https://github.com/zperk13/usercss
 @supportURL     https://github.com/zperk13/usercss/issues
@@ -80,6 +80,12 @@
         --ytcp-themed-green: @green_fg;
         --yt-active-playlist-panel-background-color: @bg1;
         --yt-frosted-glass-desktop: @bg;
+        --ytd-author-comment-badge-name-color: @fg;
+    }
+    
+    ytd-author-comment-badge-renderer[creator] {
+        /* while --ytd-author-comment-badge-name-color can be specified in *, this one has to be in the extra specific thingy */
+        --ytd-author-comment-badge-background-color: @bg1; 
     }
     
     .yt-core-attributed-string,
