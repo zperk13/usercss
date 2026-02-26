@@ -289,4 +289,12 @@
     .snackbarViewModelHost {
         background: @bg3;
     }
+    
+    #ryd-bar-container {
+      background: @red_fg !important;
+    }
+    
+    #ryd-bar {
+        background: @green_fg !important;
+    }
 }
